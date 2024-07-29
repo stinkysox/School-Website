@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.logo-image {
+  height: 60px;
+  border-radius: 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2% 2%;
+  align-items: center;
+  background-color: #fff1db;
+  color: blue;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+  transition: right 1s;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 6px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #000;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.fa {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  nav {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links ul li {
+    display: block;
+    padding: 10px 12px;
+  }
+
+  .nav-links {
+    background-color: #536493;
+    color: beige;
+    position: fixed;
+    height: 100vh;
+    width: 150px;
+    top: 0;
+    right: -250px;
+    text-align: left;
+    z-index: 2;
+    transition: right 1s ease; /* Smooth transition */
+  }
+
+  .nav-links ul li a {
+    color: beige;
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .fa {
+    display: block;
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  #close {
+    position: absolute;
+    top: 20px;
+  }
+
+  .nav-links ul {
+    padding-top: 60px; /* Ensure menu items are not behind close button */
+  }
+}

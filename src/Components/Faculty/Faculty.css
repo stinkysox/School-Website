@@ -1,0 +1,52 @@
+.faculty {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.faculty h1 {
+  text-align: center;
+  color: #4a90e2; /* Light blue color */
+}
+
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.faculty-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+}
+
+.faculty-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #4a90e2; /* Light blue border */
+}
+
+.faculty-card h2 {
+  color: #333;
+}
+
+.faculty-card h3 {
+  color: #e94e77; /* Light pink color */
+}
+
+.faculty-card p {
+  font-size: 14px;
+  color: #555; /* Slightly lighter dark color */
+}
+
+.faculty-card p strong {
+  color: #4a90e2; /* Light blue for strong text */
+}
